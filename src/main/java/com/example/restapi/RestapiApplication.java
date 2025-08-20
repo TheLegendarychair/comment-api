@@ -25,7 +25,7 @@ public class RestapiApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/api/**")
-						.allowedOrigins("http://localhost:63342") // adjust if needed
+						.allowedOrigins("https://kulikovskii.me") // adjust if needed
 						.allowedMethods("GET", "POST", "PUT", "DELETE");
 			}
 		};
