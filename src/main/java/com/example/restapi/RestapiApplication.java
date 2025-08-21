@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-public class RestapiApplication {
+public class 	RestapiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestapiApplication.class, args);
@@ -25,7 +25,8 @@ public class RestapiApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/api/**")
-						.allowedOrigins("http://localhost:63342","https://kulikovskii.me")
+						.allowedOrigins("https://kulikovskii.me","https://www.kulikovskii.me",
+								"http://localhost:3000")
 						.allowedMethods("GET", "POST", "PUT", "DELETE");
 			}
 		};
