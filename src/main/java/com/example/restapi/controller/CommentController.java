@@ -3,6 +3,7 @@ package com.example.restapi.controller;
 import com.example.restapi.model.Comment;
 import com.example.restapi.repository.CommentRepository;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,6 +24,7 @@ public class CommentController {
 
     @PostMapping
     public Comment createComment(@RequestBody Comment comment) {
+        comment.setTimeStamp(LocalDateTime.now());
         return commentRepository.save(comment);
     }
 
