@@ -47,9 +47,7 @@ public class Comment {
     public LocalDateTime getTimeStamp() {
         return timeStamp;
     }
-    public void setTimeStamp(LocalDateTime timeStamp) {
-        this.timeStamp = LocalDateTime.now();
-    }
+
 
 }
 

@@ -38,7 +38,6 @@ public class CommentController {
             Comment comment = optionalComment.get();
             comment.setUserSignature(commentDetails.getUserSignature());
             comment.setText(commentDetails.getText());
-            comment.setTimeStamp(commentDetails.getTimeStamp());
             return commentRepository.save(comment);
         }
         return null;
